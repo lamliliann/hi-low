@@ -6,11 +6,12 @@ class MAIN{
         Scanner scan = new Scanner(System.in);
         int guessNumber = 0;
         int hiddenNumber = 11;
-       // int attempts = 0;
+        int attempts = 0;
         
         while (guessNumber!= hiddenNumber){
+            System.out.print("Enter your guess: ");
             guessNumber= scan.nextInt();
-          //  attempts++;
+            attempts++;
          if(guessNumber < hiddenNumber){
           System.out.println("Too low");
         }
@@ -19,7 +20,7 @@ class MAIN{
         }
         else{
           System.out.println("You got it!");
-         // System.out.println("The amount of guess you took were: " + attempts);
+          System.out.println("The amount of guess you took were: " + attempts);
         }
       }
       scan.close();
